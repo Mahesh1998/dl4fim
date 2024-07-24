@@ -27,5 +27,15 @@ followed by conolutional layers to refine the feature maps. This loop continues,
 **Output:** Output is a labelled image produced in decoding step, which is useful for medical diagnosis.
 
 
-
-
+## Steps involved in implementation of U-Net Algorithm on Floodplain data
+1. Download the input floodplain data.
+2. Extract the 100-year floodplain data.
+3. Split the data into 80% train and 20% test.
+4. Implement augmentation of train data, which is generating new data using existing train data.
+5. Now, we define our custom weighted loss function to use as a loss function during building the model.
+6. Implemented encoder and decoder steps with multiple layers.
+7. Create a keras Model and compile it using custom loss function and optimizer.
+8. Fit the train data to our model.
+9. Plot the model loss of train and test data in each epoch.
+10. Predict the model for test data. Plot the original image and predicted image to compare.
+11. Use classification metrics such as confusion matrix to calculate the accuracy of the model.
